@@ -2,7 +2,7 @@ import React from 'react';
 import { increaseVote, decreaseVote } from '../actions';
 import { connect } from 'react-redux';
 
-const BowieCard = ({ anime, increaseVote, decreaseVote }) => {
+const AnimeCard = ({ anime, increaseVote, decreaseVote }) => {
    return (
       <div className="card">
          <h2>Name: {anime.name}</h2>
@@ -34,4 +34,4 @@ const mapDispatchToProps = dispatch => {
    };
 };
 
-export default connect(null, mapDispatchToProps)(BowieCard);
+export default connect(null, mapDispatchToProps)(AnimeCard);
